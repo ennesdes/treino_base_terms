@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="JaAAa_PzWs1PDkUjNuL2Oqip9FTO3CstDpTRjHRCh3M" />
+    <meta name="description" content="Política de Privacidade do aplicativo Treino Base — SolveBetter.">
+    <title>Política de Privacidade — Treino Base</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Política de Privacidade</h1>
+        <div class="meta-info">Treino Base · Última atualização: Junho de 2026 · Versão do Aplicativo: 1.0.0+1</div>
+    </header>
+
+    <nav class="nav-links" aria-label="Navegação do site">
+        <a href="index.html">Início</a>
+        <a href="termos.html">Termos de Uso</a>
+        <a href="privacidade.html" class="active">Política de Privacidade</a>
+    </nav>
+
+    <main>
+        <p>Nós, da SolveBetter, valorizamos profundamente a privacidade e a autonomia digital de nossos usuários. Esta Política de Privacidade descreve de forma transparente quais informações coletamos, como elas são armazenadas e os estritos limites do processamento dos seus dados no aplicativo <strong>Treino Base</strong>.</p>
+
+        <h2>1. Princípio Coletor e Armazenamento Local (Offline-First)</h2>
+        <p>Em respeito aos seus direitos de privacidade, o Treino Base foi estruturado sob o conceito técnico de <strong>arquitetura offline-first</strong>:</p>
+        <ul>
+            <li>Todos os seus dados de rotina física, incluindo histórico de exercícios, pesos levantados, repetições efetuadas, anotações de dor, sRPE (Índice de Percepção Subjetiva de Esforço), respostas aos questionários biomecânicos e logs de sessões (<code>session_log</code> e <code>running_checkin_log</code>) são gravados <strong>100% localmente no seu dispositivo</strong> por meio de estruturas seguras de persistência chave-valor (mecanismo GetStorage).</li>
+            <li>Para usuários do plano gratuito (Free), <strong>não há envio, coleta ou processamento externo</strong> de dados de treino em servidores em nuvem controlados por nós. Caso você desinstale o aplicativo sem realizar o backup nativo do sistema operacional, esses registros serão permanentemente apagados, visto que não possuímos cópia deles.</li>
+        </ul>
+
+        <h2>2. Criação de Contas e Autenticação Pro</h2>
+        <p>A exigência de criação de uma conta de usuário ou inserção de dados de autenticação está estritamente limitada aos cenários onde o usuário decide transicionar voluntariamente para o plano <strong>Pro</strong>. Essa conta serve exclusivamente para:</p>
+        <ul>
+            <li>Vincular e validar a respectiva assinatura digital adquirida na Google Play Store ou Apple App Store entre diferentes dispositivos móveis pertencentes ao mesmo titular;</li>
+            <li>Garantir a integridade do processo de restauração de compras regulado pelas lojas de aplicativos e gerenciado por nosso integrador de faturamento (RevenueCat);</li>
+            <li>Autenticação via provedores OAuth (como Google Sign-In), quando o usuário opta por criar ou acessar sua conta — limitada aos dados básicos de perfil (e-mail e nome) exigidos pelo provedor.</li>
+        </ul>
+
+        <h2>3. Dados de Pagamento e Faturamento</h2>
+        <p>O Treino Base <strong>não processa, não coleta e não armazena dados de cartões de crédito, informações bancárias ou dados de faturamento diretamente</strong>. Todas as transações financeiras e inscrições recorrentes são efetuadas de forma segura e nativa através do ecossistema de compras internas (In-App Purchases - IAP) operado pela Apple Inc. ou Google LLC, em estrito cumprimento às normas de conformidade financeira de cada plataforma.</p>
+
+        <h2>4. Direitos do Usuário (LGPD)</h2>
+        <p>Em plena aderência à Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/18), asseguramos que você mantém total propriedade sobre suas informações. Através das configurações do próprio aparelho e da interface de gerenciamento do plano contida no Drawer lateral do aplicativo, você possui o direito de:</p>
+        <ul>
+            <li><strong>Acessar e Modificar:</strong> Alterar seus dados cadastrais, objetivos de treino ou histórico a qualquer momento;</li>
+            <li><strong>Portabilidade e Eliminação:</strong> Excluir planos ativos ou limpar completamente o cache/histórico persistido de forma imutável (snapshots). O comando de arquivamento ou exclusão remove os dados das chaves de armazenamento local vinculadas (como <code>strength_plan_active</code> ou <code>running_plan_active</code>);</li>
+            <li><strong>Revogação de Consentimento:</strong> Desabilitar modalidades de treino ou remover flags biomecânicas. O repositório interno de dados possui travas defensivas para impedir a persistência de conjuntos de dados vazios ou corrompidos, garantindo estabilidade operacional.</li>
+        </ul>
+
+        <h2>5. Disposições sobre Atualizações</h2>
+        <p>Esta Política poderá ser revisada periodicamente para acompanhar a introdução de novas funcionalidades no ecossistema técnico do Treino Base (como futuros mecanismos opcionais de sincronização remota). Qualquer alteração estrutural relevante será notificada aos usuários mediante avisos destacados na tela inicial do software.</p>
+
+        <h2>6. Contato do Encarregado de Dados</h2>
+        <p>Para exercer seus direitos previstos na LGPD ou esclarecer dúvidas sobre o tratamento de dados: <a href="mailto:ennes.devmobile@gmail.com">ennes.devmobile@gmail.com</a></p>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Treino Base & SolveBetter. Todos os direitos reservados.</p>
+        <p>Identificador Bundle: br.com.solvebetter.treinobase | Localidade: pt_BR</p>
+    </footer>
+</div>
+
+</body>
+</html>

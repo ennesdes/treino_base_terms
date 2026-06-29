@@ -4,276 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="JaAAa_PzWs1PDkUjNuL2Oqip9FTO3CstDpTRjHRCh3M" />
-    <title>Treino Base - Termos de Uso e Política de Privacidade</title>
-    <style>
-        :root {
-            --bg-color: #121214;
-            --container-bg: #1a1a1e;
-            --primary-color: #00b37e;
-            --text-color: #c4c4cc;
-            --heading-color: #e1e1e6;
-            --accent-color: #fba94c;
-            --border-color: #29292e;
-        }
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: var(--container-bg);
-            padding: 40px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-
-        .tabs {
-            display: flex;
-            border-bottom: 2px solid var(--border-color);
-            margin-bottom: 30px;
-            gap: 15px;
-        }
-
-        .tab-btn {
-            background: none;
-            border: none;
-            color: var(--text-color);
-            font-size: 16px;
-            font-weight: 600;
-            padding: 10px 15px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border-bottom: 3px solid transparent;
-            margin-bottom: -2px;
-        }
-
-        .tab-btn:hover {
-            color: var(--heading-color);
-        }
-
-        .tab-btn.active {
-            color: var(--primary-color);
-            border-bottom-color: var(--primary-color);
-        }
-
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        h1 {
-            color: var(--heading-color);
-            font-size: 28px;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        h2 {
-            color: var(--heading-color);
-            font-size: 20px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-left: 4px solid var(--primary-color);
-            padding-left: 10px;
-        }
-
-        h3 {
-            color: var(--heading-color);
-            font-size: 16px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        ul {
-            margin-bottom: 15px;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .alert-box {
-            background-color: rgba(251, 169, 76, 0.1);
-            border: 1px solid var(--accent-color);
-            border-radius: 6px;
-            padding: 15px;
-            margin: 20px 0;
-            color: #ffb86c;
-        }
-
-        .alert-box strong {
-            color: #fff;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 13px;
-            color: #7c7c8a;
-            border-top: 1px solid var(--border-color);
-            padding-top: 20px;
-        }
-
-        .meta-info {
-            font-size: 14px;
-            color: #7c7c8a;
-            margin-bottom: 30px;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 15px 10px;
-            }
-            .container {
-                padding: 20px;
-            }
-            .tabs {
-                flex-direction: column;
-                gap: 5px;
-                border-bottom: none;
-            }
-            .tab-btn {
-                border-bottom: none;
-                border-left: 3px solid transparent;
-                text-align: left;
-                padding: 8px 10px;
-                width: 100%;
-            }
-            .tab-btn.active {
-                border-left-color: var(--primary-color);
-                background-color: rgba(0, 179, 126, 0.1);
-            }
-        }
-    </style>
+    <meta name="description" content="Treino Base — prescrição inteligente de treino com análise de volume muscular em tempo real. Musculação, corrida e híbrido offline-first.">
+    <title>Treino Base — Aplicativo de Treino Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="container">
     <header>
         <h1>Treino Base</h1>
-        <div class="meta-info">Última atualização: Junho de 2026 | Versão do Aplicativo: 1.0.0+1</div>
+        <p class="hero-tagline">Prescrição inteligente de treino com análise de volume muscular em tempo real.</p>
+        <div class="meta-info">Versão 1.0.0+1 · SolveBetter · pt_BR</div>
     </header>
 
-    <div class="tabs">
-        <button class="tab-btn active" onclick="switchTab('termos')">Termos de Uso</button>
-        <button class="tab-btn" onclick="switchTab('privacidade')">Política de Privacidade</button>
-    </div>
+    <nav class="nav-links" aria-label="Navegação do site">
+        <a href="index.html" class="active">Início</a>
+        <a href="termos.html">Termos de Uso</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+    </nav>
 
-    <!-- TAB: TERMOS DE USO -->
-    <div id="termos" class="tab-content active">
-        <p>Seja bem-vindo ao <strong>Treino Base</strong>, um aplicativo operado pela iniciativa SolveBetter (identificado pelo pacote <code>br.com.solvebetter.treinobase</code>). Ao utilizar nosso aplicativo em ecossistemas iOS ou Android, você concorda de forma integral e irrestrita com os presentes Termos de Uso. Caso não concorde com qualquer uma das condições dispostas, orientamos que interrompa imediatamente o uso do software.</p>
+    <section>
+        <h2>Sobre o aplicativo</h2>
+        <p>O <strong>Treino Base</strong> é um aplicativo móvel para Android e iOS que gera planos de musculação, corrida e treino híbrido a partir de um questionário curto. O motor é determinístico e <strong>offline-first</strong>: seus dados de treino ficam no seu dispositivo, sem dependência de internet para executar o plano.</p>
+        <p>Diferente de apps que apenas registram o que você fez, o Treino Base calcula a distribuição percentual de volume por grupo muscular em tempo real — incluindo o trabalho indireto de músculos sinergistas — e alerta sobre desequilíbrios estruturais de carga.</p>
 
-        <div class="alert-box">
-            <strong>AVISO LEGAL CRÍTICO (ISENÇÃO DE RESPONSABILIDADE)</strong>
-            A natureza do software Treino Base é estritamente de uma ferramenta de otimização logística, cálculo matemático e compilação estatística de dados de treinamento com base em matrizes da literatura científica pública de educação física. O Treino Base NÃO realiza coaching presencial, NÃO monitora execução de movimentos, NÃO substitui de forma alguma o profissional de Educação Física, o médico ortopedista, o cardiologista ou o fisioterapeuta. O uso do plano gerado é de inteira responsabilidade do usuário. Consulte seu médico antes de iniciar qualquer atividade física de alta intensidade.
+        <ul class="feature-list">
+            <li>Planos de musculação, corrida e híbrido gerados automaticamente</li>
+            <li>Mapa muscular com volume direto e indireto em tempo real</li>
+            <li>Alertas de desequilíbrio e limites de segurança fisiológica</li>
+            <li>Funciona offline — dados armazenados localmente no aparelho</li>
+            <li>Plano gratuito com execução completa; recursos Pro opcionais</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Disponibilidade</h2>
+        <p>O Treino Base está disponível nas lojas oficiais <strong>Google Play</strong> e <strong>Apple App Store</strong> sob o identificador <code>br.com.solvebetter.treinobase</code>.</p>
+    </section>
+
+    <section>
+        <h2>Documentos legais</h2>
+        <p>Consulte os termos de uso e a política de privacidade do aplicativo nos links abaixo:</p>
+        <div class="legal-links">
+            <a href="termos.html">Termos de Uso</a>
+            <a href="privacidade.html">Política de Privacidade</a>
         </div>
+    </section>
 
-        <h2>1. Descrição do Serviço e Objeto</h2>
-        <p>O Treino Base opera como um organizador inteligente de treinos de musculação e analisador de volume de carga acumulada por grupo muscular. O software visa preencher lacunas de planejamento logístico por meio de:</p>
-        <ul>
-            <li>Geração automatizada de planos sugeridos (via motor determinístico <code>ProgramGenerator</code>) baseando-se em inputs de objetivos, dias disponíveis e restrições físicas preenchidas no questionário inicial;</li>
-            <li>Cálculo em tempo real da distribuição percentual de estresse muscular (usando variáveis de séries x repetições x carga, computando inclusive o trabalho indireto/sinergista mapeado na literatura científica);</li>
-            <li>Identificação de assimetrias estruturais de volume mecânico e emissão de alertas de desequilíbrio e limites de segurança fisiológica (ex: teto de aumento de volume semanal de corrida fixado em até 10%).</li>
-        </ul>
-
-        <h2>2. Elegibilidade e Limitações de Escopo</h2>
-        <p>O aplicativo foi projetado para atender praticantes de musculação de níveis <strong>iniciante a intermediário</strong> que buscam gerenciar seus treinos de forma autônoma. Fica expressamente estabelecido que o software <strong>não é indicado</strong> para:</p>
-        <ul>
-            <li>Atletas de nível competitivo ou de elite esportiva (como corredores buscando marcas sub-4'30"/km ou pódios);</li>
-            <li>Indivíduos que necessitem de reabilitação médica, tratamento de patologias motoras ativas ou diagnóstico clínico de lesões graves;</li>
-            <li>Correções de postura em tempo real ou calibrações fisiológicas invasivas ou profundas (como testes laboratoriais de lactato ou VO2máx).</li>
-        </ul>
-
-        <h2>3. Modelo Comercial: Assinaturas e Paywalls Contextuais</h2>
-        <p>O Treino Base adota o modelo de negócios <em>Freemium</em>. O acesso às ferramentas de execução essencial de treinos nunca é bloqueado, contudo, funcionalidades de inteligência e diagnóstico preditivo avançado são comercializadas na modalidade <strong>Pro</strong>:</p>
-        <ul>
-            <li><strong>Plano Gratuito (Free):</strong> Confere direito à geração do plano de musculação inicial, mapa muscular básico em tempo real, visualização integral da semana corrente e subsequente de corrida, alertas gerais de desequilíbrio estrutural e orientações manuais básicas de fadiga.</li>
-            <li><strong>Plano Pago (Pro):</strong> Desbloqueia, mediante assinatura processada via canais oficiais de pagamento (App Store e Google Play monitorados via infraestrutura RevenueCat), a adaptação dinâmica automática do cronograma após check-ins, exibição detalhada de todas as semanas futuras da planilha de corrida, metas de ritmo (min/km) calibradas por zonas de pace individuais, diagnósticos de sobrecarga cruzada híbrida e relatórios históricos de evolução de carga a longo prazo.</li>
-        </ul>
-        <p>A restauração de compras ou sincronização da assinatura Pro entre múltiplos dispositivos exige obrigatoriamente a criação e vinculação de uma credencial de acesso exclusiva (conta do usuário).</p>
-
-        <h2>4. Terminação e Modificações do Sistema</h2>
-        <p>A SolveBetter reserva-se o direito de alterar, suspender ou descontinuar qualquer aspecto do software a qualquer momento, incluindo bancos de dados, regras logísticas do gerador, ou tabelas de exercícios, sem aviso prévio ou direito a indenizações, respeitando os períodos já contratados por assinantes Pro.</p>
-    </div>
-
-    <!-- TAB: POLÍTICA DE PRIVACIDADE -->
-    <div id="privacidade" class="tab-content">
-        <p>Nós, da SolveBetter, valorizamos profundamente a privacidade e a autonomia digital de nossos usuários. Esta Política de Privacidade descreve de forma transparente quais informações coletamos, como elas são armazenadas e os estritos limites do processamento dos seus dados no aplicativo <strong>Treino Base</strong>.</p>
-
-        <h2>1. Princípio Coletor e Armazenamento Local (Offline-First)</h2>
-        <p>Em respeito aos seus direitos de privacidade, o Treino Base foi estruturado sob o conceito técnico de <strong>arquitetura offline-first</strong>:</p>
-        <ul>
-            <li>Todos os seus dados de rotina física, incluindo histórico de exercícios, pesos levantados, repetições efetuadas, anotações de dor, sRPE (Índice de Percepção Subjetiva de Esforço), respostas aos questionários biomecânicos e logs de sessões (<code>session_log</code> e <code>running_checkin_log</code>) são gravados <strong>100% localmente no seu dispositivo</strong> por meio de estruturas seguras de persistência chave-valor (mecanismo GetStorage).</li>
-            <li>Para usuários do plano gratuito (Free), <strong>não há envio, coleta ou processamento externo</strong> de dados de treino em servidores em nuvem controlados por nós. Caso você desinstale o aplicativo sem realizar o backup nativo do sistema operacional, esses registros serão permanentemente apagados, visto que não possuímos cópia deles.</li>
-        </ul>
-
-        <h2>2. Criação de Contas e Autenticação Pro</h2>
-        <p>A exigência de criação de uma conta de usuário ou inserção de dados de autenticação está estritamente limitada aos cenários onde o usuário decide transicionar voluntariamente para o plano <strong>Pro</strong>. Essa conta serve exclusivamente para:</p>
-        <ul>
-            <li>Vincular e validar a respectiva assinatura digital adquirida na Google Play Store ou Apple App Store entre diferentes dispositivos móveis pertencentes ao mesmo titular;</li>
-            <li>Garantir a integridade do processo de restauração de compras regulado pelas lojas de aplicativos e gerenciado por nosso integrador de faturamento (RevenueCat).</li>
-        </ul>
-
-        <h2>3. Dados de Pagamento e Faturamento</h2>
-        <p>O Treino Base <strong>não processa, não coleta e não armazena dados de cartões de crédito, informações bancárias ou dados de faturamento diretamente</strong>. Todas as transações financeiras e inscrições recorrentes são efetuadas de forma segura e nativa através do ecossistema de compras internas (In-App Purchases - IAP) operado pela Apple Inc. ou Google LLC, em estrito cumprimento às normas de conformidade financeira de cada plataforma.</p>
-
-        <h2>4. Direitos do Usuário (LGPD)</h2>
-        <p>Em plena aderência à Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/18), asseguramos que você mantém total propriedade sobre suas informações. Através das configurações do próprio aparelho e da interface de gerenciamento do plano contida no Drawer lateral do aplicativo, você possui o direito de:</p>
-        <ul>
-            <li><strong>Acessar e Modificar:</strong> Alterar seus dados cadastrais, objetivos de treino ou histórico a qualquer momento;</li>
-            <li><strong>Portabilidade e Eliminação:</strong> Excluir planos ativos ou limpar completamente o cache/histórico persistido de forma imutável (snapshots). O comando de arquivamento ou exclusão remove os dados das chaves de armazenamento local vinculadas (como <code>strength_plan_active</code> ou <code>running_plan_active</code>);</li>
-            <li><strong>Revogação de Consentimento:</strong> Desabilitar modalidades de treino ou remover flags biomecânicas. O repositório interno de dados possui travas defensivas para impedir a persistência de conjuntos de dados vazios ou corrompidos, garantindo estabilidade operacional.</li>
-        </ul>
-
-        <h2>5. Disposições sobre Atualizações</h2>
-        <p>Esta Política poderá ser revisada periodicamente para acompanhar a introdução de novas funcionalidades no ecossistema técnico do Treino Base (como futuros mecanismos opcionais de sincronização remota). Qualquer alteração estrutural relevante será notificada aos usuários mediante avisos destacados na tela inicial do software.</p>
+    <div class="contact-box">
+        <strong style="color: var(--heading-color);">Suporte ao usuário</strong>
+        <p style="margin-bottom: 0;">Dúvidas sobre o app, consentimento OAuth ou privacidade: <a href="mailto:ennes.devmobile@gmail.com">ennes.devmobile@gmail.com</a></p>
     </div>
 
     <footer class="footer">
         <p>&copy; 2026 Treino Base & SolveBetter. Todos os direitos reservados.</p>
-        <p>Identificador Bundle: br.com.solvebetter.treinobase | Localidade: pt_BR</p>
+        <p>Identificador Bundle: br.com.solvebetter.treinobase</p>
     </footer>
 </div>
-
-<script>
-    function switchTab(tabId) {
-        // Remove active class de todas as abas e conteúdos
-        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-        
-        // Adiciona active class na aba clicada e no respectivo conteúdo
-        const clickedBtn = event.currentTarget;
-        clickedBtn.classList.add('active');
-        document.getElementById(tabId).classList.add('active');
-        
-        // Rola suavemente para o topo do container ao mudar de aba
-        document.querySelector('.container').scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-</script>
 
 </body>
 </html>
